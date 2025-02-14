@@ -138,6 +138,126 @@
         .gallery-fullscreen .carousel-control-next {
             width: 10%;
         }
+        
+        /* Add new letter styles */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+        
+        .letter-container {
+            max-width: 800px;
+            width: 90%;
+            margin: 50px auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transform: rotate(-1deg);
+        }
+        
+        .letter-content {
+            font-family: 'Dancing Script', cursive;
+            color: #333;
+            font-size: calc(1.2em + 1vw);
+            line-height: 1.6;
+            text-align: left;
+            padding: 20px 10px;
+            position: relative;
+            max-width: 100%;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        
+        .letter-date {
+            text-align: right;
+            font-size: calc(0.9em + 0.5vw);
+            margin-bottom: 30px;
+            color: #666;
+            padding-right: 10px;
+        }
+        
+        .letter-signature {
+            text-align: right;
+            font-size: calc(1.3em + 1vw);
+            margin-top: 40px;
+            color: #ff6b6b;
+            padding-right: 10px;
+        }
+        
+        .letter-heart {
+            position: absolute;
+            font-size: 2em;
+            color: rgba(255, 107, 107, 0.1);
+            transform: rotate(45deg);
+        }
+        
+        .letter-heart:nth-child(1) { top: 10%; left: 5%; }
+        .letter-heart:nth-child(2) { top: 40%; right: 8%; }
+        .letter-heart:nth-child(3) { bottom: 15%; left: 12%; }
+        
+        .letter-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 48%, #f0f0f0 49%, #f0f0f0 51%, transparent 52%);
+            background-size: 20px 20px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .letter-container {
+                width: 95%;
+                padding: 30px 15px;
+                margin: 30px auto;
+                transform: rotate(0deg);
+            }
+            
+            .letter-content {
+                padding: 15px 5px;
+            }
+            
+            .letter-heart {
+                font-size: 1.5em;
+            }
+            
+            .letter-content p {
+                padding: 0 5px;
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .letter-container {
+                padding: 20px 10px;
+                margin: 20px auto;
+            }
+            
+            .letter-content {
+                font-size: calc(1.1em + 1vw);
+            }
+            
+            .letter-date {
+                font-size: calc(0.8em + 0.5vw);
+                margin-bottom: 20px;
+            }
+            
+            .letter-signature {
+                font-size: calc(1.2em + 1vw);
+                margin-top: 30px;
+            }
+            
+            .letter-heart {
+                font-size: 1.2em;
+            }
+            
+            .letter-heart:nth-child(1) { top: 5%; left: 3%; }
+            .letter-heart:nth-child(2) { top: 45%; right: 5%; }
+            .letter-heart:nth-child(3) { bottom: 10%; left: 8%; }
+        }
     </style>
 </head>
 <body>
@@ -145,6 +265,33 @@
         <div class="hero">
             <h1>Happy 2-Year Anniversary! ❤️</h1>
             <p>Two years of love, laughter, and beautiful memories!</p>
+        </div>
+        
+        <div class="letter-container">
+            <span class="letter-heart">❤️</span>
+            <span class="letter-heart">❤️</span>
+            <span class="letter-heart">❤️</span>
+            <div class="letter-content">
+                <div class="letter-date">February 14, 2024</div>
+                
+                <p>My Dearest Love,</p>
+                
+                <p>As I sit here reflecting on our two beautiful years together, my heart overflows with love and gratitude. Every moment with you has been a precious gift, painting my world with colors I never knew existed.</p>
+                
+                <p>From our first shy glances to our shared laughter under starlit skies, you've made every day feel like a beautiful dream. Your smile still makes my heart skip a beat, and your touch still sends butterflies dancing in my stomach, just like it did on day one.</p>
+                
+                <p>You're not just my partner; you're my best friend, my confidant, my safe harbor in life's storms. With you, even the ordinary moments become extraordinary. Whether we're sharing a quiet cup of coffee in the morning or dancing in the kitchen at midnight, every second with you is magical.</p>
+                
+                <p>These past two years have been filled with countless precious moments - adventures that have become cherished memories, challenges that have made us stronger, and quiet moments that have deepened our bond. Looking through our photos, I'm reminded of how blessed I am to have you by my side.</p>
+                
+                <p>As we celebrate this milestone, I want you to know that my love for you grows deeper with each passing day. You're the first thing I think about when I wake up and the last thought before I fall asleep. You make me want to be better, dream bigger, and love harder.</p>
+                
+                <p>Here's to us, my love - to the memories we've made and the adventures yet to come. Thank you for being you, for loving me, and for making these two years the most beautiful chapters of my life.</p>
+                
+                <p>Forever and always yours,</p>
+                
+                <div class="letter-signature">With all my love ❤️</div>
+            </div>
         </div>
         
         <h2 class="mt-5">Memories Through Time</h2>
