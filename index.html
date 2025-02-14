@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy 2-Year Anniversary ❤️</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+        }
+        .hero {
+            padding: 100px 20px;
+            animation: fadeIn 2s;
+        }
+        .timeline {
+            margin-top: 50px;
+        }
+        .timeline img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .timeline img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .timeline .caption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 80%;
+            margin: 0 auto;
+            bottom: 30px;
+        }
+        
+        .carousel-caption h5 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .carousel-caption p {
+            font-size: 1.1em;
+            line-height: 1.4;
+            font-style: italic;
+        }
+        
+        .carousel-caption .date {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        
+        .quote-divider {
+            color: #fad0c4;
+            margin: 10px auto;
+            font-size: 1.2em;
+        }
+        
+        /* New Gallery Styles */
+        .gallery-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+        }
+        
+        #galleryCarousel {
+            position: relative;
+        }
+        
+        #galleryCarousel .carousel-inner {
+            height: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        #galleryCarousel .carousel-item {
+            height: 100%;
+        }
+        
+        #galleryCarousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .fullscreen-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .fullscreen-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Fullscreen styles */
+        .gallery-fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 9999;
+            padding: 20px;
+        }
+        
+        .gallery-fullscreen #galleryCarousel .carousel-inner {
+            height: calc(100vh - 40px);
+        }
+        
+        .gallery-fullscreen .carousel-control-prev,
+        .gallery-fullscreen .carousel-control-next {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Happy 2-Year Anniversary! ❤️</h1>
+            <p>Two years of love, laughter, and beautiful memories!</p>
+        </div>
+        
+        <h2 class="mt-5">Memories Through Time</h2>
+        <div class="row timeline">
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20230221_050956611.jpg" alt="First memories together">
+                <div class="caption">
+                    <p>Early Days Together</p>
+                    <small>February 21, 2023</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20230222_025108624.jpg" alt="Special moments">
+                <div class="caption">
+                    <p>Special Moments</p>
+                    <small>February 22, 2023</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20230408_020603525.PORTRAIT.jpg" alt="Spring memories">
+                <div class="caption">
+                    <p>Spring Memories</p>
+                    <small>April 8, 2023</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20230708_061150211.jpg" alt="Summer adventures">
+                <div class="caption">
+                    <p>Summer Adventures</p>
+                    <small>July 8, 2023</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20230821_025156134.jpg" alt="Late summer memories">
+                <div class="caption">
+                    <p>Late Summer Memories</p>
+                    <small>August 21, 2023</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20231224_130142443.jpg" alt="Christmas together">
+                <div class="caption">
+                    <p>Christmas Together</p>
+                    <small>December 24, 2023</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20240211_022559087.PORTRAIT.jpg" alt="New year memories">
+                <div class="caption">
+                    <p>New Year Memories</p>
+                    <small>February 11, 2024</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/PXL_20240214_154419960.jpg" alt="Valentine's Day">
+                <div class="caption">
+                    <p>Valentine's Day</p>
+                    <small>February 14, 2024</small>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="img/275A0667.jpg" alt="Professional photoshoot">
+                <div class="caption">
+                    <p>Professional Photoshoot</p>
+                    <small>Special Moments</small>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="mt-5">Gallery of Us</h2>
+        <div class="gallery-container">
+            <button class="fullscreen-btn" onclick="toggleFullscreen()">
+                <i class="fas fa-expand"></i>
+            </button>
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/PXL_20230221_073015614.jpg" class="d-block w-100" alt="Morning Love">
+                        <div class="carousel-caption">
+                            <h5>Morning Moments</h5>
+                            <p>"Every morning I wake up to find that my dream of being with you is real."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 21, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230221_050956611.jpg" class="d-block w-100" alt="Early Days">
+                        <div class="carousel-caption">
+                            <h5>Where It All Began</h5>
+                            <p>"In your eyes, I found my home. In your heart, I found my love."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 21, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230222_025108624.jpg" class="d-block w-100" alt="Sweet Moments">
+                        <div class="carousel-caption">
+                            <h5>Sweet Beginnings</h5>
+                            <p>"Every moment with you feels like the beginning of something beautiful."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 22, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230223_082757898.jpg" class="d-block w-100" alt="Together Time">
+                        <div class="carousel-caption">
+                            <h5>Together Time</h5>
+                            <p>"The best times are the simple moments spent with you."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 23, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230408_020603525.PORTRAIT.jpg" class="d-block w-100" alt="Spring Love">
+                        <div class="carousel-caption">
+                            <h5>Spring Blossoms</h5>
+                            <p>"Like spring flowers, our love grows more beautiful with each passing day."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">April 8, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230415_114120510.PORTRAIT.jpg" class="d-block w-100" alt="Spring Joy">
+                        <div class="carousel-caption">
+                            <h5>Spring Joy</h5>
+                            <p>"Your smile brings warmth like the spring sunshine."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">April 15, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230708_061150211.jpg" class="d-block w-100" alt="Summer Adventures">
+                        <div class="carousel-caption">
+                            <h5>Summer Adventures</h5>
+                            <p>"Every adventure is better when I'm with you."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">July 8, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230717_024202699.jpg" class="d-block w-100" alt="Summer Love">
+                        <div class="carousel-caption">
+                            <h5>Summer Love</h5>
+                            <p>"Our love is as bright as the summer sun."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">July 17, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230805_073128553.jpg" class="d-block w-100" alt="August Memories">
+                        <div class="carousel-caption">
+                            <h5>August Memories</h5>
+                            <p>"Creating memories with you is my favorite thing to do."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">August 5, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230821_025156134.jpg" class="d-block w-100" alt="Late Summer">
+                        <div class="carousel-caption">
+                            <h5>Perfect Moments</h5>
+                            <p>"Time stands still when I'm with you."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">August 21, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230821_032855831.jpg" class="d-block w-100" alt="Evening Love">
+                        <div class="carousel-caption">
+                            <h5>Evening Magic</h5>
+                            <p>"Every evening with you feels like a romantic movie."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">August 21, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230825_165310234.PORTRAIT.jpg" class="d-block w-100" alt="Late Summer Portrait">
+                        <div class="carousel-caption">
+                            <h5>Summer Portrait</h5>
+                            <p>"Your beauty outshines the summer sun."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">August 25, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230913_024801879.jpg" class="d-block w-100" alt="September Love">
+                        <div class="carousel-caption">
+                            <h5>September Stories</h5>
+                            <p>"Each day with you writes a new chapter in our love story."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">September 13, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20231024_115545070.PORTRAIT.jpg" class="d-block w-100" alt="October Romance">
+                        <div class="carousel-caption">
+                            <h5>October Romance</h5>
+                            <p>"Falling in love with you over and over again."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">October 24, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20231104_094454053.jpg" class="d-block w-100" alt="November Days">
+                        <div class="carousel-caption">
+                            <h5>November Days</h5>
+                            <p>"Grateful for every moment spent with you."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">November 4, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20231224_130142443.jpg" class="d-block w-100" alt="Christmas Love">
+                        <div class="carousel-caption">
+                            <h5>Christmas Magic</h5>
+                            <p>"You're the greatest gift I could have ever wished for."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">December 24, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240211_022559087.PORTRAIT.jpg" class="d-block w-100" alt="New Year Love">
+                        <div class="carousel-caption">
+                            <h5>New Year, Same Love</h5>
+                            <p>"Another year of loving you, and I fall deeper in love each day."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 11, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240212_015937524.PORTRAIT.jpg" class="d-block w-100" alt="February Nights">
+                        <div class="carousel-caption">
+                            <h5>February Nights</h5>
+                            <p>"Even the stars can't compete with the sparkle in your eyes."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 12, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240214_154419960.jpg" class="d-block w-100" alt="Valentine's Love">
+                        <div class="carousel-caption">
+                            <h5>Valentine's Magic</h5>
+                            <p>"Every day is Valentine's Day when I'm with you."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 14, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/275A0667.jpg" class="d-block w-100" alt="Professional Love">
+                        <div class="carousel-caption">
+                            <h5>Captured Moments</h5>
+                            <p>"Some moments are so perfect, they deserve to be captured forever."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">Special Moments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/275A0842.JPG" class="d-block w-100" alt="Professional Magic">
+                        <div class="carousel-caption">
+                            <h5>Forever Yours</h5>
+                            <p>"Two years down, forever to go. Every day with you is a dream come true."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">Special Moments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/275A0904.JPG" class="d-block w-100" alt="Professional Dreams">
+                        <div class="carousel-caption">
+                            <h5>Dreams Come True</h5>
+                            <p>"Living my dream with you by my side."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">Special Moments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230821_025136085.jpg" class="d-block w-100" alt="Summer Evening">
+                        <div class="carousel-caption">
+                            <h5>Summer Evening Glow</h5>
+                            <p>"In the warmth of summer evenings, our love shines brightest."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">August 21, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20230821_033024334.MP.jpg" class="d-block w-100" alt="Night Magic">
+                        <div class="carousel-caption">
+                            <h5>Magical Nights</h5>
+                            <p>"Every night with you feels like a dream I never want to wake up from."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">August 21, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20231028_063631076.PORTRAIT.jpg" class="d-block w-100" alt="October Portrait">
+                        <div class="carousel-caption">
+                            <h5>Autumn Love</h5>
+                            <p>"Like autumn leaves, I fall for you more every day."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">October 28, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20231116_025710495.jpg" class="d-block w-100" alt="November Memories">
+                        <div class="carousel-caption">
+                            <h5>November Nights</h5>
+                            <p>"In the cool of November, your love keeps me warm."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">November 16, 2023</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240211_100928447.PORTRAIT.jpg" class="d-block w-100" alt="February Morning">
+                        <div class="carousel-caption">
+                            <h5>Morning Light</h5>
+                            <p>"Every morning with you brings new reasons to smile."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 11, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240212_022436844.jpg" class="d-block w-100" alt="February Evening">
+                        <div class="carousel-caption">
+                            <h5>Evening Whispers</h5>
+                            <p>"In the quiet of evening, my heart whispers your name."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 12, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240213_042828600.MP.jpg" class="d-block w-100" alt="Pre-Valentine">
+                        <div class="carousel-caption">
+                            <h5>Love's Eve</h5>
+                            <p>"The anticipation of tomorrow makes today even more special."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 13, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240215_023317806.PORTRAIT.jpg" class="d-block w-100" alt="Post-Valentine">
+                        <div class="carousel-caption">
+                            <h5>Love Continues</h5>
+                            <p>"Our love story doesn't need a special day to be celebrated."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 15, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240215_042806531.jpg" class="d-block w-100" alt="February Love">
+                        <div class="carousel-caption">
+                            <h5>February Memories</h5>
+                            <p>"Each moment with you is a treasure I'll keep forever."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 15, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240224_053000199.jpg" class="d-block w-100" alt="Late February">
+                        <div class="carousel-caption">
+                            <h5>Late February Magic</h5>
+                            <p>"As winter fades, our love continues to bloom."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">February 24, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/PXL_20240323_123002660.PORTRAIT.jpg" class="d-block w-100" alt="March Love">
+                        <div class="carousel-caption">
+                            <h5>March Memories</h5>
+                            <p>"Spring brings new beginnings, but my love for you remains constant."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">March 23, 2024</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/GOVN1529.JPG" class="d-block w-100" alt="Professional Elegance">
+                        <div class="carousel-caption">
+                            <h5>Elegant Moments</h5>
+                            <p>"In every photo, our love tells its own beautiful story."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">Special Moments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/1 (3).jpg" class="d-block w-100" alt="Professional Joy">
+                        <div class="carousel-caption">
+                            <h5>Joyful Hearts</h5>
+                            <p>"Your smile lights up my world and captures my heart."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">Special Moments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/1 (55).jpg" class="d-block w-100" alt="Professional Love">
+                        <div class="carousel-caption">
+                            <h5>Love's Portrait</h5>
+                            <p>"Every picture tells our story, but my heart holds so much more."</p>
+                            <div class="quote-divider">❤️</div>
+                            <p class="date">Special Moments</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleFullscreen() {
+            const container = document.querySelector('.gallery-container');
+            container.classList.toggle('gallery-fullscreen');
+            
+            const btn = document.querySelector('.fullscreen-btn i');
+            if (container.classList.contains('gallery-fullscreen')) {
+                btn.classList.remove('fa-expand');
+                btn.classList.add('fa-compress');
+            } else {
+                btn.classList.remove('fa-compress');
+                btn.classList.add('fa-expand');
+            }
+        }
+        
+        // Initialize carousel with auto-sliding
+        document.addEventListener('DOMContentLoaded', function() {
+            new bootstrap.Carousel(document.querySelector('#galleryCarousel'), {
+                interval: 5000,
+                pause: 'hover'
+            });
+        });
+        
+        // Handle ESC key to exit fullscreen
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const container = document.querySelector('.gallery-container');
+                if (container.classList.contains('gallery-fullscreen')) {
+                    toggleFullscreen();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
